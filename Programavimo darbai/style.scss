@@ -1,0 +1,44 @@
+$primary-color: #4CAF50;
+$hover-color: #45a049;
+$gap: 20px;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: $gap;
+    padding: $gap;
+}
+
+.item {
+    background-color: $primary-color;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.2s, background-color 0.2s;
+    border-radius: 10px;
+    animation: fadeIn 0.5s ease-in-out;
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+}
+
+.item:hover {
+    transform: scale(1.1);
+    background-color: $hover-color;
+}
