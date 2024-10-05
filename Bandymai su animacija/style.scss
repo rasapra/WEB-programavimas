@@ -1,0 +1,15 @@
+.button {
+  background-color: rgb(112, 235, 112);
+  border: none;
+  border-radius: $border-radius; 
+  color:rgb(12, 2, 37);;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s; 
+
+  &:active {
+      background-color: rgb(10, 128, 10);
+      transform: scale(1.05); 
+  }
+}
