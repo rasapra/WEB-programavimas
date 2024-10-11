@@ -13,13 +13,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #a6dda4;
     color: white;
     padding: 10px 20px;
 }
 
 header .logo {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 nav ul {
@@ -52,7 +52,7 @@ main {
 }
 
 .grid-item {
-    background-color: #f4f4f4;
+    background-color: #bb8a21;
     padding: 20px;
     text-align: center;
     border: 1px solid #ccc;
@@ -65,16 +65,16 @@ main {
 }
 
 .flex-item {
-    background-color: #f4f4f4;
+    background-color: #77bbdb;
     padding: 20px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: 1px solid #0f5706;
 }
 
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #333;
+    background-color: #056e66;
     color: white;
     position: relative;
     bottom: 0;
