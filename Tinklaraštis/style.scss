@@ -1,0 +1,57 @@
+$primary-color: #cde4ce; 
+$background-color: rgba(255, 255, 255, 0.8);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+
+    header {
+        background-color: rgb(138, 190, 151);
+        color: rgba(255, 255, 255, 0.589);
+        padding: 20px;
+        text-align: center;
+
+        nav {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    display: inline;
+                    margin: 0 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(100, 91, 10, 0.8);
+        color: rgba(255, 255, 255, 0.589);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}
