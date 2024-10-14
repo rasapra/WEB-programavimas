@@ -10,28 +10,30 @@ body {
 header {
     background-color: #5e8a69;
     color: rgba(255, 255, 255, 0.589);
-    padding: 20px;
-    text-align: center;
+    padding: 10px;
+    display: flex; /* Leis elementams būti vienoje eilutėje */
+    align-items: center; 
+    justify-content: space-between; /* Tarpai tarp h2 ir nav arba 'flex-start', jeigu norite mažiau tarpo */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+nav ul { 
+    list-style-type: none; 
+    padding: 0; 
+    text-align: center; 
 }
 
-nav li {
-    display: inline;
-    margin: 0 15px;
+nav li { 
+    display: inline; 
+    margin: 0 15px; 
 }
 
-nav a {
-    text-decoration: none;
+nav a { 
     color: rgba(255, 255, 255, 0.932); 
+    text-decoration: none; 
 }
 
 nav a:hover { 
     text-decoration: underline; 
-
 }
 
 main {
@@ -58,7 +60,7 @@ footer li a:hover {
 }
 
 @media (max-width: 600px) {
-    nav li {
+    header nav li {
         display: block;
         margin: 10px 0;
     }
