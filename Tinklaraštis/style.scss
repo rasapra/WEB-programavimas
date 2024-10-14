@@ -48,10 +48,13 @@ body {
     }
 }
 
-
 @media (max-width: 600px) {
     header nav li {
         display: block;
         margin: 10px 0;
+    }
+
+    main {
+        padding: 10px; 
     }
 }

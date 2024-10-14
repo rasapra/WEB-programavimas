@@ -7,16 +7,13 @@ body {
     color: #333333b2; 
 }
 
-h3 { 
-    text-align: center;
-    color: rgba(255, 255, 255, 0.589);
-}
-
 header { 
-    background-color: #5e8a69; 
-    color: rgba(255, 255, 255, 0.589); 
-    padding: 20px; 
-    text-align: center; 
+    background-color: #5e8a69;
+    color: rgba(255, 255, 255, 0.589);
+    padding: 19px;
+    display: flex; /* Leis elementams būti vienoje eilutėje */
+    align-items: center; 
+    justify-content: space-between;
 }
 
 nav ul { 
@@ -49,7 +46,7 @@ nav a:hover {
 }
 
 h2 { 
-    color:rgba(255, 255, 255, 0.589); 
+    color: rgba(255, 255, 255, 0.589); 
     margin: 0 0 20px 0; 
 }
 
@@ -60,7 +57,7 @@ h2 {
 label { 
     display: block; 
     margin-bottom: 5px; 
-    color:rgba(255, 255, 255, 0.589); 
+    color: rgba(255, 255, 255, 0.589); 
 }
 
 input[type="text"], 
