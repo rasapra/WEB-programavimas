@@ -1,0 +1,55 @@
+$primary-color: #4CAF50; // Žalia spalva
+$background-color: rgba(255, 255, 255, 0.8);
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+
+    header {
+        background-color: $background-color;
+        padding: 20px;
+        text-align: center;
+
+        nav {
+            ul {
+                list-style: none;
+                padding: 0;
+
+                li {
+                    display: inline;
+                    margin: 0 15px;
+
+                    a {
+                        text-decoration: none;
+                        color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: $background-color;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+// Responsiveness
+@media (max-width: 600px) {
+    header nav li {
+        display: block;
+        margin: 10px 0;
+    }
+}

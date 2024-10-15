@@ -7,13 +7,13 @@ body {
     color: #333333b2; 
 }
 
-header { 
+header {
     background-color: #5e8a69;
     color: rgba(255, 255, 255, 0.589);
-    padding: 19px;
-    display: flex; 
+    padding: 10px;
+    display: flex; /* Leis elementams būti vienoje eilutėje */
     align-items: center; 
-    justify-content: space-between;
+    justify-content: space-between; /* Tarpai tarp h2 ir nav arba 'flex-start', jeigu norite mažiau tarpo */
 }
 
 nav ul { 
