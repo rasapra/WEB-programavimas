@@ -10,10 +10,15 @@ body {
 header {
     background-color: #5e8a69;
     color: rgba(255, 255, 255, 0.589);
-    padding: 10px;
-    display: flex; /* Leis elementams būti vienoje eilutėje */
+    padding: 10px; 
+    display: flex; 
     align-items: center; 
-    justify-content: space-between; /* Tarpai tarp h2 ir nav arba 'flex-start', jeigu norite mažiau tarpo */
+    justify-content: space-between;
+}
+
+h2 {
+    margin: 0; 
+    line-height: 1.5; 
 }
 
 nav ul { 
@@ -38,6 +43,55 @@ nav a:hover {
 
 main {
     padding: 20px;
+}
+ 
+.contact-box, .feedback-box {
+    background-color: #5e8a69; 
+    border-radius: 8px; 
+    box-shadow: 0 0 10px rgba(196, 184, 184, 0.1); 
+    margin: 20px auto; 
+    padding: 40px; 
+    max-width: 400px; 
+}
+
+h2 { 
+    color: rgba(255, 255, 255, 0.589); 
+    margin: 0 0 20px 0; 
+}
+
+.contact-info { 
+    color: rgba(255, 255, 255, 0.815); 
+}
+
+label { 
+    display: block; 
+    margin-bottom: 5px; 
+    color: rgba(255, 255, 255, 0.589); 
+}
+
+input[type="text"], 
+input[type="email"], 
+textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 15px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    background-color: rgba(255, 255, 255, 0.589); 
+    color: rgba(46, 44, 44, 1);
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.589); 
+    color: rgba(46, 44, 44, 1); 
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #e3ecdf57;
 }
 
 footer {

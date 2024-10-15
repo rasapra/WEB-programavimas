@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktai</title>
-    <link rel="stylesheet" href="styles.css">
-    <!-- panaudokite tik vieną stiliaus failą -->
-    <!--<link rel="stylesheet" href="styles.scss">  --> <!-- Panaikinta, nes .scss turėtų būti kompiliuota į .css -->
+    <link rel="stylesheet" href="style.css">
+    
 </head>
 <body>
-    <header>
+    <header class="header">
         <h2>Sutark su savimi ir tu sutarsi su visu pasauliu</h2>
         <nav>
             <ul>
@@ -29,7 +28,7 @@
 
     <div class="feedback-box">
         <h2>Tavo kontaktai ir atsiliepimas</h2>
-        <form id="contact-form" action="feet_back.php" method="post"> <!-- Pakeista į feet_back.php -->
+        <form id="contact-form" action="feet_back.php" method="post"> 
             <label for="name">Vardas:</label>
             <input type="text" id="name" name="name" required>
 
@@ -47,6 +46,6 @@
         <p>2024 Sutark su savimi. Visos teisės saugomos.</p>
         <li><a href="#privacy">Privatumo politika</a></li>
     </footer>
-    <script src="script.js"></script> <!-- Perkelta čia, kad būtų po formos -->
+    <script src="script.js"></script> 
 </body>
 </html>

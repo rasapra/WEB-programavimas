@@ -7,13 +7,18 @@ body {
     color: #333333b2; 
 }
 
-header { 
+header {
     background-color: #5e8a69;
     color: rgba(255, 255, 255, 0.589);
-    padding: 19px;
+    padding: 10px; 
     display: flex; 
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
+}
+
+h2 {
+    margin: 0; 
+    line-height: 1.5; 
 }
 
 nav ul { 
@@ -74,7 +79,7 @@ textarea {
 
 button {
     background-color: rgba(255, 255, 255, 0.589); 
-    color: rgba(46, 44, 44, 1); /* Pataisyta */
+    color: rgba(46, 44, 44, 1); 
     border: none;
     padding: 10px;
     border-radius: 5px;
