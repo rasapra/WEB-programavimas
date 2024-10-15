@@ -9,12 +9,12 @@ console.log(firstName + " " + lastName);
 
 // arba
 
-console.log(fullName)
+console.log(fullName);
 
-let itemZ
+let itemZ;
 console.log(itemZ);
 
-itemZ = "Vėliau priskirta reikšmė"
+itemZ = "Vėliau priskirta reikšmė";
 console.log(itemZ);
 
 // 1 užduotis

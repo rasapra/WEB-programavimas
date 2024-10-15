@@ -1,82 +1,82 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #a6dda4;
-    color: white;
-    padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #a6dda4;
+  color: white;
+  padding: 10px 20px;
 }
 
 header .logo {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 .content img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .grid-item {
-    background-color: #bb8a21;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ccc;
+  background-color: #bb8a21;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
 }
 
 .flex-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .flex-item {
-    background-color: #77bbdb;
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #0f5706;
+  background-color: #77bbdb;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #0f5706;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #056e66;
-    color: white;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 20px;
+  background-color: #056e66;
+  color: white;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

@@ -1,112 +1,113 @@
 body {
-    font-family: Arial, Helvetica, sans-serif; 
-    margin: 0; 
-    padding: 0; 
-    background: url('background.jpg') no-repeat center center fixed; 
-    background-size: cover; 
-    color: #333333b2; 
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333333b2;
 }
 
 header {
-    background-color: #5e8a69;
-    color: rgba(255, 255, 255, 0.589);
-    padding: 10px;
-    display: flex; /* Leis elementams būti vienoje eilutėje */
-    align-items: center; 
-    justify-content: space-between; /* Tarpai tarp h2 ir nav arba 'flex-start', jeigu norite mažiau tarpo */
+  background-color: #5e8a69;
+  color: rgba(255, 255, 255, 0.589);
+  padding: 10px;
+  display: flex; /* Leis elementams būti vienoje eilutėje */
+  align-items: center;
+  justify-content: space-between; /* Tarpai tarp h2 ir nav arba 'flex-start', jeigu norite mažiau tarpo */
 }
 
-nav ul { 
-    list-style-type: none; 
-    padding: 0; 
-    text-align: center; 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
 }
 
-nav li { 
-    display: inline; 
-    margin: 0 15px; 
+nav li {
+  display: inline;
+  margin: 0 15px;
 }
 
-nav a { 
-    color: rgba(255, 255, 255, 0.932); 
-    text-decoration: none; 
+nav a {
+  color: rgba(255, 255, 255, 0.932);
+  text-decoration: none;
 }
 
-nav a:hover { 
-    text-decoration: underline; 
+nav a:hover {
+  text-decoration: underline;
 }
 
-.contact-box, .feedback-box {
-    background-color: #5e8a69; 
-    border-radius: 8px; 
-    box-shadow: 0 0 10px rgba(196, 184, 184, 0.1); 
-    margin: 20px auto; 
-    padding: 40px; 
-    max-width: 400px; 
+.contact-box,
+.feedback-box {
+  background-color: #5e8a69;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(196, 184, 184, 0.1);
+  margin: 20px auto;
+  padding: 40px;
+  max-width: 400px;
 }
 
-h2 { 
-    color: rgba(255, 255, 255, 0.589); 
-    margin: 0 0 20px 0; 
+h2 {
+  color: rgba(255, 255, 255, 0.589);
+  margin: 0 0 20px 0;
 }
 
-.contact-info { 
-    color: rgba(255, 255, 255, 0.815); 
+.contact-info {
+  color: rgba(255, 255, 255, 0.815);
 }
 
-label { 
-    display: block; 
-    margin-bottom: 5px; 
-    color: rgba(255, 255, 255, 0.589); 
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.589);
 }
 
-input[type="text"], 
-input[type="email"], 
-textarea { 
-    width: 100%; 
-    padding: 10px; 
-    margin-bottom: 15px; 
-    border: 1px solid #ccc; 
-    border-radius: 4px; 
-    background-color: rgba(255, 255, 255, 0.589); 
-    color: rgba(46, 44, 44, 1);
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.589);
+  color: rgba(46, 44, 44, 1);
 }
 
 button {
-    background-color: rgba(255, 255, 255, 0.589); 
-    color: rgba(46, 44, 44, 1); /* Pataisyta */
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.589);
+  color: rgba(46, 44, 44, 1); /* Pataisyta */
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:hover {
-    background-color: #e3ecdf57;
+  background-color: #e3ecdf57;
 }
 
-footer { 
-    text-align: center; 
-    padding: 10px; 
-    background-color: rgba(100, 91, 10, 0.8);
-    color: rgba(255, 255, 255, 0.589); 
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(100, 91, 10, 0.8);
+  color: rgba(255, 255, 255, 0.589);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 footer li a {
-    color: rgba(255, 255, 255, 0.589);
-    text-decoration: none;
+  color: rgba(255, 255, 255, 0.589);
+  text-decoration: none;
 }
 
 footer li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 @media (max-width: 600px) {
-    header nav li {
-        display: block;
-        margin: 10px 0;
-    }
+  header nav li {
+    display: block;
+    margin: 10px 0;
+  }
 }

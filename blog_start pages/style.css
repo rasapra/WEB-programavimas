@@ -1,50 +1,50 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('background.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #333;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url("background.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #333;
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  text-align: center;
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 nav li {
-    display: inline;
-    margin: 0 15px;
+  display: inline;
+  margin: 0 15px;
 }
 
 nav a {
-    text-decoration: none;
-    color: #4CAF50; /* Žalia spalva */
+  text-decoration: none;
+  color: #4caf50; /* Žalia spalva */
 }
 
 main {
-    padding: 20px;
+  padding: 20px;
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(255, 255, 255, 0.8);
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /* Responsiveness */
 @media (max-width: 600px) {
-    nav li {
-        display: block;
-        margin: 10px 0;
-    }
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
 }
