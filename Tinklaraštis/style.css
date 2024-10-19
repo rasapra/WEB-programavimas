@@ -20,16 +20,12 @@ header {
 
 h1,
 h2 {
-  margin: 1em 0; /* Atstumas viršuje ir apačioje */
-}
-
-h2 {
-  margin: 0;
-  line-height: 1.5;
+  margin: 1em 0;
+  line-height: 1.8; /* Atstumas viršuje ir apačioje */
 }
 
 p {
-  line-height: 1.6; /* Arba šiek tiek didesnis, kad užtikrintumėte geresnį aiškumą */
+  line-height: 1.8; /* Arba šiek tiek didesnis, kad užtikrintumėte geresnį aiškumą */
 }
 
 nav ul {
@@ -54,9 +50,21 @@ nav a:hover {
 
 section {
   margin: 2em auto; /* Atstumas aplink skyrius */
-  padding: 20px; /* Didesnis vidinės erdvės kiekis */
+  padding: 10px; /* Didesnis vidinės erdvės kiekis */
   background-color: rgb(156, 185, 129);
   border-radius: 8px; /* Šiek tiek suapvalinti kampai */
+  max-width: 1000px; /* Maksimalus plotis, kad būtų nedideli atstumai */
+  width: 90%; /* Arba galite naudoti procentinę reikšmę */
+}
+
+.profile-image,
+.blog-image,
+.road-image,
+.gate-image {
+  max-width: 70%; /* Užtikrina, kad paveikslėlis pritaikytųsi prie skyriaus pločio */
+  height: auto; /* Išlaiko proporcijas */
+  display: block; /* Priverčia paveikslėlį tapti blokiniu elementu */
+  margin: 20px auto; /* Prideda erdvę aplink paveikslėlį ir centrą */
 }
 
 .contact-box,
@@ -141,7 +149,7 @@ footer li a:hover {
   footer {
     text-align: center; /* Galite manipuliuoti tekstu skirtinguose ekranuose */
   }
-  nav ul li {
+  nav li {
     display: block;
     margin-bottom: 10px;
   }
