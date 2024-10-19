@@ -3,8 +3,13 @@ document
   .addEventListener("submit", function (event) {
     event.preventDefault();
 
+    const nameValue = document.getElementById("name").value;
+    const emailValue = document.getElementById("email").value;
     const feedbackValue = document.getElementById("feedback").value;
-    console.log(feedbackValue);
+
+    console.log("Vardas:", nameValue);
+    console.log("El. paštas:", emailValue);
+    console.log("Atsiliepimas:", feedbackValue);
 
     alert("Dėkoju už atsiliepimą!");
   });
