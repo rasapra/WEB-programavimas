@@ -1,24 +1,35 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lucida Handwriting", cursive;
+  background-color: #5e8a69;
   margin: 0;
   padding: 0;
-  background: url("background.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #333;
+  line-height: 1.6; /* Geresniam skaitomumui */
 }
 
 header {
-  background-color: #5e8a69;
+  background-color: #43664b;
   color: rgba(255, 255, 255, 0.589);
   padding: 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+h1,
+h2 {
+  margin: 1em 0; /* Atstumas viršuje ir apačioje */
 }
 
 h2 {
   margin: 0;
   line-height: 1.5;
+}
+
+p {
+  line-height: 1.6; /* Arba šiek tiek didesnis, kad užtikrintumėte geresnį aiškumą */
 }
 
 nav ul {
@@ -41,8 +52,11 @@ nav a:hover {
   text-decoration: underline;
 }
 
-main {
-  padding: 20px;
+section {
+  margin: 2em auto; /* Atstumas aplink skyrius */
+  padding: 20px; /* Didesnis vidinės erdvės kiekis */
+  background-color: rgb(156, 185, 129);
+  border-radius: 8px; /* Šiek tiek suapvalinti kampai */
 }
 
 .contact-box,
@@ -50,8 +64,11 @@ main {
   background-color: #5e8a69;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(196, 184, 184, 0.1);
-  margin: 20px auto;
-  padding: 40px;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 40px;
+  padding-bottom: 10px;
+  padding-left: 15px;
   max-width: 400px;
 }
 
@@ -97,17 +114,23 @@ button:hover {
 
 footer {
   text-align: center;
-  padding: 10px;
+  padding: 20px;
   background-color: rgba(100, 91, 10, 0.8);
   color: rgba(255, 255, 255, 0.589);
-  position: fixed;
+  position: relative; /* Leisti turiniui būti matomam */
   bottom: 0;
   width: 100%;
+  box-sizing: border-box; /* svarbu, kad padding įtraukiamas į bendrą plotį */
+}
+
+footer li {
+  display: inline-block; /* jei pas jus kiti <li> elementai */
 }
 
 footer li a {
   color: rgba(255, 255, 255, 0.589);
   text-decoration: none;
+  padding: 0 5px; /* atstumas tarp nuorodų */
 }
 
 footer li a:hover {
@@ -115,8 +138,15 @@ footer li a:hover {
 }
 
 @media (max-width: 600px) {
-  header nav li {
+  footer {
+    text-align: center; /* Galite manipuliuoti tekstu skirtinguose ekranuose */
+  }
+  nav ul li {
     display: block;
-    margin: 10px 0;
+    margin-bottom: 10px;
+  }
+  .contact-box,
+  .feedback-box {
+    max-width: 350px; /* Užtikrinkite, kad nekristumėte žemyn */
   }
 }

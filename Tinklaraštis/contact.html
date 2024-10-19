@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
+    <header>
       <h2>Sutark su savimi ir tu sutarsi su visu pasauliu</h2>
       <nav>
         <ul>
@@ -17,34 +17,44 @@
         </ul>
       </nav>
     </header>
+    <main>
+      <section>
+        <div class="contact-box">
+          <h2>Mano kontaktai</h2>
+          <p class="contact-info">Rasa Praninskienė</p>
+          <p class="contact-info">El. paštas: rasiukaspr@gmail.com</p>
+          <p class="contact-info">Telefono numeris: +370 67108826</p>
+        </div>
+      </section>
+      <section>
+        <div class="feedback-box">
+          <h2>Tavo kontaktai ir atsiliepimas</h2>
+          <form id="contact-form" action="feet_back.php" method="post">
+            <label for="name">Vardas:</label>
+            <input type="text" id="name" name="name" required />
 
-    <div class="contact-box">
-      <h2>Mano kontaktai</h2>
-      <p class="contact-info">Rasa Praninskienė</p>
-      <p class="contact-info">El. paštas: rasiukaspr@gmail.com</p>
-      <p class="contact-info">Telefono numeris: +370 67108826</p>
-    </div>
+            <label for="email">El. paštas:</label>
+            <input type="email" id="email" name="email" required />
 
-    <div class="feedback-box">
-      <h2>Tavo kontaktai ir atsiliepimas</h2>
-      <form id="contact-form" action="feet_back.php" method="post">
-        <label for="name">Vardas:</label>
-        <input type="text" id="name" name="name" required />
+            <label for="feedback">Atsiliepimas:</label>
+            <textarea id="feedback" name="feedback" required></textarea>
 
-        <label for="email">El. paštas:</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="feedback">Atsiliepimas:</label>
-        <textarea id="feedback" name="feedback" required></textarea>
-
-        <button type="submit">Siųsti</button>
-      </form>
-    </div>
-
+            <button type="submit">Siųsti</button>
+          </form>
+        </div>
+      </section>
+    </main>
     <footer>
-      <p>2024 Sutark su savimi. Visos teisės saugomos.</p>
+      <p>&copy; 2024 Sutark su savimi. Visos teisės saugomos.</p>
       <li><a href="#privacy">Privatumo politika</a></li>
     </footer>
     <script src="script.js"></script>
+    <form id="contact-form">
+      <textarea
+        id="feedback"
+        placeholder="Įveskite savo atsiliepimą..."
+      ></textarea>
+      <button type="submit">Siųsti</button>
+    </form>
   </body>
 </html>

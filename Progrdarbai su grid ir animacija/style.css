@@ -20,11 +20,20 @@ body {
   color: white;
   padding: 20px;
   text-align: center;
-  transition: transform 0.2s;
+  transition: transform 0.2s, background-color 0.2s;
   border-radius: 10px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .item:hover {
   transform: scale(1.1);
   background-color: #45a049;
-}
+}/*# sourceMappingURL=style.css.map */

@@ -6,33 +6,27 @@ body {
   background-size: cover;
   color: #333;
 }
-
-header {
+body header {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   text-align: center;
 }
-
-nav ul {
+body header nav ul {
   list-style: none;
   padding: 0;
 }
-
-nav li {
+body header nav ul li {
   display: inline;
   margin: 0 15px;
 }
-
-nav a {
+body header nav ul li a {
   text-decoration: none;
-  color: #4caf50; /* Žalia spalva */
+  color: #4caf50;
 }
-
-main {
+body main {
   padding: 20px;
 }
-
-footer {
+body footer {
   text-align: center;
   padding: 10px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -41,10 +35,9 @@ footer {
   width: 100%;
 }
 
-/* Responsiveness */
 @media (max-width: 600px) {
-  nav li {
+  header nav li {
     display: block;
     margin: 10px 0;
   }
-}
+}/*# sourceMappingURL=style.css.map */

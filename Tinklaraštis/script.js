@@ -1,5 +1,10 @@
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {
-    alert("Dėkoju už Tavo žinutę!");
+    event.preventDefault();
+
+    const feedbackValue = document.getElementById("feedback").value;
+    console.log(feedbackValue);
+
+    alert("Dėkoju už atsiliepimą!");
   });
