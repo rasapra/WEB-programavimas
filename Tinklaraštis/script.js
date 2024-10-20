@@ -1,3 +1,6 @@
+document.getElementById("scrollToTop").onclick = function () {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+};
 document
   .getElementById("contact-form")
   .addEventListener("submit", function (event) {

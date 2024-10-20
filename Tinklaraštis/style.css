@@ -3,19 +3,19 @@ body {
   background-color: #5e8a69;
   margin: 0;
   padding: 0;
-  background-size: cover;
   color: #333;
-  line-height: 1.6; /* Geresniam skaitomumui */
+  line-height: 1.8;
 }
 
 header {
   background-color: #43664b;
   color: rgba(255, 255, 255, 0.589);
-  padding: 10px;
+  margin: 0;
+  padding: 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 h1,
@@ -23,9 +23,17 @@ h2 {
   margin: 1em 0;
   line-height: 1.8; /* Atstumas viršuje ir apačioje */
 }
+/* Pagrindiniai H1, H2 ir P šrifto dydžiai */
+h1 {
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+}
 
 p {
-  line-height: 1.8; /* Arba šiek tiek didesnis, kad užtikrintumėte geresnį aiškumą */
+  font-size: 16px;
 }
 
 nav ul {
@@ -49,8 +57,8 @@ nav a:hover {
 }
 
 section {
-  margin: 2em auto; /* Atstumas aplink skyrius */
-  padding: 10px; /* Didesnis vidinės erdvės kiekis */
+  margin: 3em auto; /* Atstumas aplink skyrius */
+  padding: 10px;
   background-color: rgb(156, 185, 129);
   border-radius: 8px; /* Šiek tiek suapvalinti kampai */
   max-width: 1000px; /* Maksimalus plotis, kad būtų nedideli atstumai */
@@ -60,7 +68,8 @@ section {
 .profile-image,
 .blog-image,
 .road-image,
-.gate-image {
+.gate-image,
+.contact-image {
   max-width: 70%; /* Užtikrina, kad paveikslėlis pritaikytųsi prie skyriaus pločio */
   height: auto; /* Išlaiko proporcijas */
   display: block; /* Priverčia paveikslėlį tapti blokiniu elementu */
@@ -111,13 +120,30 @@ button {
   background-color: rgba(255, 255, 255, 0.589);
   color: rgba(46, 44, 44, 1);
   border: none;
-  padding: 10px;
+  padding: 10px 15px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
   background-color: #e3ecdf57;
+}
+
+#scrollToTop {
+  position: fixed;
+  left: 1px;
+  bottom: 150px;
+  background-color: rgb(141, 170, 114);
+  border: none;
+  padding: 10px;
+  margin: 13px;
+  border-radius: 3px;
+  cursor: pointer
+  transition: background-color 0.2s;
+}
+#scrollToTop:hover {
+  background-color: rgba(94, 88, 38, 0.774);
 }
 
 footer {
@@ -125,20 +151,20 @@ footer {
   padding: 20px;
   background-color: rgba(100, 91, 10, 0.8);
   color: rgba(255, 255, 255, 0.589);
-  position: relative; /* Leisti turiniui būti matomam */
+  position: relative;
   bottom: 0;
   width: 100%;
-  box-sizing: border-box; /* svarbu, kad padding įtraukiamas į bendrą plotį */
+  box-sizing: border-box;
 }
 
 footer li {
-  display: inline-block; /* jei pas jus kiti <li> elementai */
+  display: inline-block;
 }
 
 footer li a {
   color: rgba(255, 255, 255, 0.589);
   text-decoration: none;
-  padding: 0 5px; /* atstumas tarp nuorodų */
+  padding: 0 5px;
 }
 
 footer li a:hover {
@@ -146,8 +172,17 @@ footer li a:hover {
 }
 
 @media (max-width: 600px) {
+  h1 {
+    font-size: 28px; /* Padidintas H1 dydis */
+ }
+  h2 {
+    font-size: 24px; /* Padidintas H2 dydis */
+  }
+  p {
+    font-size: 18px; /* Padidintas P dydis */
+  }
   footer {
-    text-align: center; /* Galite manipuliuoti tekstu skirtinguose ekranuose */
+    text-align: center;
   }
   nav li {
     display: block;
@@ -155,6 +190,6 @@ footer li a:hover {
   }
   .contact-box,
   .feedback-box {
-    max-width: 350px; /* Užtikrinkite, kad nekristumėte žemyn */
+    max-width: 350px;
   }
 }
