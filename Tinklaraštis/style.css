@@ -76,6 +76,17 @@ section {
   margin: 20px auto; /* Prideda erdvę aplink paveikslėlį ir centrą */
 }
 
+.notes-image {
+  max-width: 30%; /* Užtikrina, kad paveikslėlis pritaikytųsi prie skyriaus pločio */
+  height: auto; /* Išlaiko proporcijas */
+  display: block; /* Priverčia paveikslėlį tapti blokiniu elementu */
+  margin: 20px auto;
+}
+
+._blank {
+  color: #333;
+}
+
 .contact-box,
 .feedback-box {
   background-color: #5e8a69;
@@ -132,23 +143,24 @@ button:hover {
 
 #scrollToTop {
   position: fixed;
-  left: 1px;
+  left: 10px;
   bottom: 150px;
   background-color: rgb(141, 170, 114);
   border: none;
   padding: 10px;
-  margin: 13px;
+  margin: 2px;
   border-radius: 3px;
-  cursor: pointer
-  transition: background-color 0.2s;
+  cursor: pointer;
+  transition: background-color 0.1s;
 }
+
 #scrollToTop:hover {
-  background-color: rgba(94, 88, 38, 0.774);
+  background-color: rgba(128, 123, 68, 0.178);
 }
 
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 2px;
   background-color: rgba(100, 91, 10, 0.8);
   color: rgba(255, 255, 255, 0.589);
   position: relative;
@@ -173,13 +185,13 @@ footer li a:hover {
 
 @media (max-width: 600px) {
   h1 {
-    font-size: 28px; /* Padidintas H1 dydis */
- }
+    font-size: 30px; /* Padidintas H1 dydis */
+  }
   h2 {
-    font-size: 24px; /* Padidintas H2 dydis */
+    font-size: 26px; /* Padidintas H2 dydis */
   }
   p {
-    font-size: 18px; /* Padidintas P dydis */
+    font-size: 20px; /* Padidintas P dydis */
   }
   footer {
     text-align: center;
