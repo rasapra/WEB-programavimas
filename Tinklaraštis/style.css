@@ -1,5 +1,5 @@
 body {
-  font-family: "Lucida Handwriting", cursive;
+  font-family: "Lucida Handwriting";
   background-color: #5e8a69;
   margin: 0;
   padding: 0;
@@ -144,7 +144,7 @@ button:hover {
 #scrollToTop {
   position: fixed;
   left: 10px;
-  bottom: 150px;
+  bottom: 112px;
   background-color: rgb(141, 170, 114);
   border: none;
   padding: 10px;
@@ -184,14 +184,20 @@ footer li a:hover {
 }
 
 @media (max-width: 600px) {
+  body {
+    font-family: "Lucida Handwriting cursive";
+  }
   h1 {
-    font-size: 30px; /* Padidintas H1 dydis */
+    font-size: 30px;
   }
   h2 {
-    font-size: 26px; /* Padidintas H2 dydis */
+    font-size: 26px;
   }
   p {
-    font-size: 20px; /* Padidintas P dydis */
+    font-size: 20px;
+  }
+  .notes-image {
+    max-width: 60%;
   }
   footer {
     text-align: center;
