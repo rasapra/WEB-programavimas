@@ -1,0 +1,8 @@
+body {
+  background-color: rgb(140, 198, 216);
+  font-family: system-ui;
+}
+
+.form-item {
+  margin-bottom: 16px;
+}
